@@ -1,0 +1,67 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: fit-content;
+    width: 100%;
+}
+
+
+.book-container{
+    height: 300px;
+    width: 600px;
+    margin: 50px;
+    -webkit-border-radius: 50px;
+border-radius: 50px;
+background: #D1D8EC;
+-webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    display: grid;
+    grid-template-areas: "title . "
+                         "type price"
+                         "copies button";   
+    grid-template-columns: 2fr 1fr;
+
+}
+
+
+.title{
+    grid-area: title;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.type{
+    grid-area: type;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.price{
+    grid-area: price;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+
+.copies{
+    grid-area: copies;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.button{
+    grid-area: button;
+    -webkit-border-radius: 50px;
+border-radius: 50px;
+background: #D1D8EC;
+-webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+border: none;
+margin-bottom: 30px;
+margin-right: 30px;
+font-size: 20px;
+}
